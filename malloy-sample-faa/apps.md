@@ -1,14 +1,20 @@
 # Malloy example datasets
 
-These examples at designed to be used with [Malloy](http://www.malloydata.dev), a semantic modeling and querying data language.
+[Malloy](http://www.malloydata.dev) and [Composer](https://www.malloydata.dev/composer) testrun.
 
-A good way to understand [Malloy](http://www.malloydata.dev) is to load some of these examples and
-play with them. **[Source code for these examples](https://github.com/malloydata/malloy-samples)** can be found on github.
+**[Source code for the original examples](https://github.com/malloydata/malloy-samples)** can be found on github.
 
-### DuckDB datasets
+### Datasets
 
+This section originally included information about the included datasets.
+
+The FAA dataset uses DuckDB which is built into both the [Malloy Composer](https://github.com/malloydata/malloy-composer)
+and the [Malloy VSCode](https://marketplace.visualstudio.com/items?itemName=malloydata.malloy-vscode) extension. BigQuery datasets can also be used but require additional setup and a [Google Cloud](https://cloud.google.com) login.
+
+<!--
 Data for these dataset is included. DuckDB is built into both [Malloy Composer](https://github.com/malloydata/malloy-composer)
-and the [Malloy VSCode](https://marketplace.visualstudio.com/items?itemName=malloydata.malloy-vscode) extension. These example should load without any configuration.
+and the [Malloy VSCode](https://marketplace.visualstudio.com/items?itemName=malloydata.malloy-vscode) extension. These example should load without any configuration. 
+-->
 
 <!-- malloy-app
   app="faa"

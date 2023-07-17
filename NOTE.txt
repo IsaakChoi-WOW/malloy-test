@@ -1,0 +1,9 @@
+## Install Malloy composer
+
+
+## Run composer on Malloy file
+./composer 
+
+
+## How to specify the port/address to run composer on?
+## How to restrict access to within WOW org
