@@ -1,0 +1,9 @@
+{
+  "apps": [
+    {
+      "id": "faa",
+      "path": "./faa/composer.json"
+    }
+  ],
+  "readme": "./apps.md"
+}
