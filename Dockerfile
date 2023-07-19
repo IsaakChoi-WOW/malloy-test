@@ -9,13 +9,14 @@ WORKDIR /
 COPY src .
 
 ## Add execute permissions to malloy composer binary
-RUN chmod a+x composer
+# RUN chmod a+x composer
+RUN ls
 
 ## NOT NEEDED??
 ## Expose port 4000 (within container)
 # ENV PORT=4000
 # EXPOSE 4000
 
-## Execute the application
-CMD [ "./composer", "data" ]
+## Execute the application (in background; not required)
+CMD [ "./composer", "data", "&" ]
 
