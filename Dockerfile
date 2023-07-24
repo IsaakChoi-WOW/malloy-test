@@ -3,20 +3,17 @@
 FROM debian:bullseye-slim
 
 ## Set working dir within image to /app
-WORKDIR /
+WORKDIR /app
 
 ## Copy from src into image
 COPY src .
 
 ## Add execute permissions to malloy composer binary
 # RUN chmod a+x composer
-RUN ls
 
 ## NOT NEEDED??
-## Expose port 4000 (within container)
-# ENV PORT=4000
-# EXPOSE 4000
+EXPOSE $PORT
 
 ## Execute the application (in background; not required)
-CMD [ "./composer", "data", "&" ]
+CMD [ "./composer", "--port", $PORT, "--host", "0.0.0.0", "data"]
 
